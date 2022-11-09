@@ -1,0 +1,61 @@
+@import '../GlobalStyle/GlobalStyle.scss';
+
+.product-card {
+    text-align: center;
+    margin-bottom: 30px;
+
+    &__img {
+        padding-top: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+
+            &:nth-child(1) {
+                transform: translateX(-50%) scale(1);
+                transition: transform 0.5s ease;
+            }
+
+            &:nth-child(2) {
+                transform: translateX(-50%) scale(0);
+                transition: transform 0.5s ease;
+            }
+        }
+
+        &:hover img {
+            &:nth-child(1) {
+                transform: translateX(-50%) scale(0);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(-50%) scale(1);
+            }
+        }
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-weight: normal;
+        color: $txt-second-color;
+        margin-bottom: 20px;
+    }
+
+    &__price {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $txt-main-color;
+        margin-bottom: 20px;
+
+        &__old {
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: $txt-second-color;
+        }
+    }
+}

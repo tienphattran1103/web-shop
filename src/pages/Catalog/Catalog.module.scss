@@ -1,0 +1,82 @@
+@import '../../components/GlobalStyle/GlobalStyle.scss';
+
+.catalog {
+    @include flex(flex-start, flex-start);
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    &__filter {
+        width: 20%;
+
+        @include tablet {
+            width: max-content;
+            height: 100vh;
+            background-color: $main-bg;
+            position: fixed;
+            padding: 1rem;
+            left: 0;
+            top: $header-tablet-height;
+            z-index: 100;
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+
+        @include mobile {
+            top: $header-mobile-height;
+        }
+
+        &__toggle {
+            display: none;
+
+            @include tablet {
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        &.active {
+            transform: translateX(0);
+        }
+
+        &__close {
+            display: none;
+
+            @include tablet {
+                display: block;
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__widget {
+            margin-bottom: 32px;
+
+            &__title {
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 16px;
+                color: $txt-main-color;
+                text-transform: capitalize;
+            }
+
+            &__content {
+                font-size: 1rem;
+
+                &__item {
+                    margin-bottom: 10px;
+                    color: $txt-second-color;
+                }
+            }
+        }
+    }
+
+    &__content {
+        flex: 1;
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+}
