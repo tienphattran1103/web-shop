@@ -1,5 +1,5 @@
 {
-    "homepage": "http://tienphattran1103.github.io/web-shop/",
+    "homepage": "https://tienphattran1103.github.io/web-shop/",
     "name": "web-shop",
     "version": "0.1.0",
     "private": true,
@@ -25,11 +25,11 @@
     },
     "scripts": {
         "start": "react-app-rewired start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "build": "react-app-rewired build",
         "test": "react-app-rewired test",
-        "eject": "react-scripts eject",
-        "predeploy": "react-app-rewired build",
-        "deploy": "gh-pages -d build"
+        "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": [
