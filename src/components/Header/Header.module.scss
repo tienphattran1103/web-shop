@@ -1,4 +1,5 @@
-@import '../GlobalStyle/GlobalStyle.scss';
+@import '../GlobalStyle/mixins';
+@import '../GlobalStyle/variables';
 
 .header {
     background-color: $main-bg;

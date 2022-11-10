@@ -1,5 +1,5 @@
-@import '../../components/GlobalStyle/GlobalStyle.scss';
-@import '../../components/ProductView/ProductView.module.scss';
+@import '../../components/GlobalStyle/mixins';
+@import '../../components/GlobalStyle/variables';
 
 .cart {
     @include flex(flex-start, flex-start);

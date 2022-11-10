@@ -1,4 +1,5 @@
-@import '../GlobalStyle/GlobalStyle.scss';
+@import '../GlobalStyle/mixins';
+@import '../GlobalStyle/variables';
 
 .product {
     @include flex(flex-start, flex-start);

@@ -1,4 +1,5 @@
-@import '../../components/GlobalStyle/GlobalStyle.scss';
+@import '../../components/GlobalStyle/mixins';
+@import '../../components/GlobalStyle/variables';
 
 .catalog {
     @include flex(flex-start, flex-start);

@@ -1,4 +1,3 @@
-// import './sass/index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
@@ -6,17 +5,15 @@ import { Provider } from 'react-redux';
 
 import store from './redux/store';
 import './assets/boxicons-2.0.7/css/boxicons.min.css';
-import GlobalStyle from './components/GlobalStyle';
+import '~/components/GlobalStyle/index.scss';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <GlobalStyle>
-            <Provider store={store}>
-                <App />
-            </Provider>
-        </GlobalStyle>
+        <Provider store={store}>
+            <App />
+        </Provider>
     </React.StrictMode>,
 );
 

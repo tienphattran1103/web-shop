@@ -1,5 +1,6 @@
-@import '../GlobalStyle/GlobalStyle.scss';
-
+// @import '../GlobalStyle/GlobalStyle.scss';
+@import '../GlobalStyle/mixins';
+@import '../GlobalStyle/variables';
 .btn {
     border: none;
     outline: none;
