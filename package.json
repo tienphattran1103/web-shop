@@ -1,5 +1,6 @@
 {
     "name": "web-shop",
+    "homepage": "https://tienphattran1103.github.io/web-shop/",
     "version": "0.1.0",
     "proxy": "http://localhost:3000",
     "private": true,
