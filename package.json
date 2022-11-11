@@ -1,5 +1,4 @@
 {
-    "homepage": "https://tienphattran1103.github.io/web-shop/",
     "name": "web-shop",
     "version": "0.1.0",
     "proxy": "http://localhost:3000",
@@ -13,6 +12,7 @@
         "node-sass": "^7.0.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-error-boundary": "^3.1.4",
         "react-redux": "^8.0.5",
         "react-router-dom": "^6.3.0",
         "react-scripts": "5.0.1",
