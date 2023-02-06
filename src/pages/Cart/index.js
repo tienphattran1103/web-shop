@@ -16,6 +16,9 @@ function Cart() {
     const Items = useSelector((state) => state.cartsItem.value);
     const cartItems = productData.getCartItemsInfo(Items);
 
+    console.log('>>> Items: ', Items);
+    console.log('>>> cartItems: ', cartItems);
+
     const [totalProduct, setTotalProduct] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0);
 

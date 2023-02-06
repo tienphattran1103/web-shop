@@ -260,7 +260,9 @@ const getAllProducts = () => products;
 const getProducts = (count) => {
     const max = products.length - count;
     const min = 0;
-    const start = Math.floor(Math.random() * (max - min) + min);
+
+    // get randomRange from min to max
+    const start = Math.floor(Math.random() * (max - min + 1) + min);
     return products.slice(start, start + count);
 };
 
@@ -277,7 +279,7 @@ const getCartItemsInfo = (cartItems) => {
             });
         });
     }
-    // console.log(res)
+    // console.log(res);
     // console.log('sorted')
     // console.log(res.sort((a, b) => a.slug > b.slug ? 1 : (a.slug < b.slug ? -1 : 0)))
     return res.sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0));

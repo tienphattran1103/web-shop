@@ -21,7 +21,7 @@ function CartItem({ item }) {
 
     const handleQuantityChange = (type) => {
         let newQuantity = quantity;
-        console.log('newQuantity: ', newQuantity);
+        // console.log('newQuantity: ', newQuantity);
         if (type === 'PLUS') {
             newQuantity += 1;
         }

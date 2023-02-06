@@ -37,7 +37,7 @@ export const cartItemSlice = createSlice({
             }
 
             localStorage.setItem('cart-item', JSON.stringify(sortITem(state.value)));
-            console.log('redux addItem');
+            // console.log('redux addItem');
         },
         updateItem: (state, action) => {
             const item = action.payload;
@@ -56,7 +56,7 @@ export const cartItemSlice = createSlice({
             }
 
             localStorage.setItem('cart-item', JSON.stringify(sortITem(state.value)));
-            console.log('redux updateITem');
+            // console.log('redux updateITem');
         },
 
         removeItem: (state, action) => {
@@ -65,7 +65,7 @@ export const cartItemSlice = createSlice({
             state.value = delItem(state.value, item);
 
             localStorage.setItem('cart-item', JSON.stringify(sortITem(state.value)));
-            console.log('delete updateITem');
+            // console.log('delete updateITem');
         },
     },
 });

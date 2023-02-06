@@ -20,6 +20,7 @@ function InfinityList({ data }) {
         if (data.length > perLoad) {
             setProductsData(data.slice(0, perLoad));
         }
+        setIndex(1);
     }, [data]);
 
     //detect if user scroll to bottom of listRef
@@ -39,7 +40,9 @@ function InfinityList({ data }) {
     //Load more items
     useEffect(() => {
         const getItem = () => {
+            //     console.log('>>> Data length: ', data.length);
             const pages = Math.floor(data.length / perLoad);
+
             const maxIndex = data.length % perLoad === 0 ? pages : pages + 1;
 
             if (isLoad && index < maxIndex) {
